@@ -17,16 +17,16 @@ Installation guide:
     cd WormSim
 
 3) Set idaInstallDir:
-
+```
     idaInstallDir=`pwd`/Sundials
-
+```
 4) Go to sundials-2.3.0 directory, configure & make:
-
+```
     cd sundials-2.3.0
     ./configure CC=g++ --prefix=$idaInstallDir --disable-mpi --disable-fcmix
     make
     make install
-
+```
 5) Look carefully at the resulting output and check for any error messages (there shouldn't be any...). Fix and repeat step 4 if necessary.
 
 6) You should now be able to proceed to running the simulator.
